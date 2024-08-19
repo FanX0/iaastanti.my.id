@@ -77,7 +77,7 @@ export default {
     selectSkin(type) {
       this.skin.jenis_kulit = type;
     },
-    async storeSkin() {c
+    async storeSkin() {
       let formData = new FormData();
       formData.append('jenis_kulit', this.skin.jenis_kulit);
       await this.$store.dispatch('customer/skin/storeSkin', formData)
